@@ -26,7 +26,7 @@ use yii\bootstrap4\Html;
     </header>
 
     <p>
-        <?php echo Components\frameworks\yii2\Yii2Adapter::Span('Hi') ?>
+
     </p>
 
 </body>
