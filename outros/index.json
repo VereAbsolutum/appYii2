@@ -1,0 +1,150 @@
+[
+  {
+    "label": "Cadastro",
+    "url": [ "#" ],
+    "active": false,
+    "itemsOptions": { "class": "dropdown-submenu" },
+    "submenuOptions": { "class": "dropdown-menu" },
+    "items": [
+      { "label": "Proprietario", "url": [ "cdadm\/cadastro\/cadproprietario\/admin" ] },
+      { "label": "Locatario", "url": [ "cdadm\/cadastro\/cadlocatario\/admin" ] },
+      { "label": "Fiador", "url": [ "cdadm\/cadastro\/cadfiador\/admin" ] },
+      { "label": "Angariador", "url": [ "cdadm\/cadastro\/cadangariador\/admin" ] },
+      { "label": "Pretendente", "url": [ "cdadm\/cadastro\/cadpretendente\/admin" ] },
+      {
+        "label": "Imovel",
+        "url": [ "#" ],
+        "active": false,
+        "itemsOptions": { "class": "dropdown-submenu" },
+        "submenuOptions": { "class": "dropdown-menu" },
+        "items": [
+          { "label": "Imoveis", "url": [ "cdadm\/imovel\/imvbem\/admin" ] },
+          { "label": "Incorpora\u00e7\u00e3o", "url": [ "cdadm\/imovel\/imvincorporacao\/admin" ] }
+        ]
+      },
+      "<li class=\"divider\"><\/li>",
+      {
+        "label": "Contrato",
+        "url": [ "#" ],
+        "active": false,
+        "itemsOptions": { "class": "dropdown-submenu" },
+        "submenuOptions": { "class": "dropdown-menu" },
+        "items": [
+          { "label": "Aluguel", "url": { "0": "cdadm\/contrato\/concontrato\/admin", "id": 1 } },
+          { "label": "Acordo", "url": { "0": "cdadm\/contrato\/concontrato\/admin", "id": 2 } }
+        ]
+      },
+      {
+        "label": "Renova\u00e7\u00e3o",
+        "url": [ "#" ],
+        "active": false,
+        "itemsOptions": { "class": "dropdown-submenu" },
+        "submenuOptions": { "class": "dropdown-menu" },
+        "items": [
+          { "label": "Aluguel", "url": { "0": "cdadm\/contrato\/conaditamento\/admin", "id": 1 } },
+          { "label": "Acordo", "url": { "0": "cdadm\/contrato\/conaditamento\/admin", "id": 2 } }
+        ]
+      },
+      "<li class=\"divider\"><\/li>",
+      { "label": "Banco", "url": [ "financeiro\/cadastro\/finbanco\/admin" ] }
+    ]
+  },
+  {
+    "label": "Atendimento",
+    "url": [ "#" ],
+    "active": false,
+    "itemsOptions": { "class": "dropdown-submenu" },
+    "submenuOptions": { "class": "dropdown-menu" },
+    "items": [
+      {
+        "label": "FInanceiro",
+        "url": [ "#" ],
+        "active": false,
+        "itemsOptions": { "class": "dropdown-submenu" },
+        "submenuOptions": { "class": "dropdown-menu" },
+        "items": [
+          { "label": "Locatarios", "url": [ "cdadm\/resumo\/rsmresumo\/adminfinanclocat" ] },
+          { "label": "Proprietarios", "url": [ "cdadm\/resumo\/rsmresumo\/adminfinancpropr" ] },
+          { "label": "Angariadores", "url": [ "cdadm\/resumo\/rsmresumo\/adminfinancangar" ] }
+        ]
+      },
+      { "label": "Encontra Im\u00f3veis", "url": [ "cdadm\/contato\/atendimento\/atendimento" ] },
+      { "label": "Calend\u00e1rio", "url": [ "cdadm\/contato\/calendario\/calendario" ] }
+    ]
+  },
+  {
+    "label": "Tabelas",
+    "url": [ "#" ],
+    "active": false,
+    "itemsOptions": { "class": "dropdown-submenu" },
+    "submenuOptions": { "class": "dropdown-menu" },
+    "items": [
+      { "label": "Filial", "url": [ "cdadm\/tabela\/tabfilial\/admin" ] },
+      { "label": "Tipo de Contrato", "url": [ "cdadm\/tabela\/tabtipodecontrato\/admin" ] },
+      {
+        "label": "\u00cdndices",
+        "url": [ "#" ],
+        "active": false,
+        "itemsOptions": { "class": "dropdown-submenu" },
+        "submenuOptions": { "class": "dropdown-menu" },
+        "items": [
+          { "label": "Juros", "url": [ "cdadm\/tabela\/tabjuros\/admin" ] },
+          { "label": "Multa", "url": [ "cdadm\/tabela\/tabmulta\/admin" ] },
+          { "label": "Correcao Monetaria", "url": [ "cdadm\/tabela\/tabcorrecaomonetaria\/admin" ] },
+          { "label": "\u00cdndices para Reajustes", "url": [ "cdadm\/tabela\/tabindicereajuste\/admin" ] },
+          { "label": "IRRF", "url": [ "cdadm\/tabela\/tabirrf\/admin" ] }
+        ]
+      },
+      {
+        "label": "Internas",
+        "url": [ "#" ],
+        "active": false,
+        "itemsOptions": { "class": "dropdown-submenu" },
+        "submenuOptions": { "class": "dropdown-menu" },
+        "items": [
+          { "label": "Bancos", "url": [ "cdadm\/tabela\/tabbanco\/admin" ] },
+          { "label": "Tipo do Bem", "url": [ "cdadm\/tabela\/tabtipodobem\/admin" ] },
+          { "label": "Aplica\u00e7\u00e3o", "url": [ "cdadm\/tabela\/tabaplicacao\/admin" ] },
+          { "label": "Agente Financiador", "url": [ "cdadm\/tabela\/tabagentefinanciador\/admin" ] },
+          { "label": "Placas de An\u00fancio", "url": [ "cdadm\/tabela\/tabplacaanuncio\/admin" ] },
+          { "label": "Seguradora", "url": [ "cdadm\/tabela\/tabseguradora\/admin" ] },
+          { "label": "Cart\u00f3rio", "url": [ "cdadm\/tabela\/tabcartorio\/admin" ] },
+          { "label": "Quadro de Chaves", "url": [ "cdadm\/tabela\/tabquadrochaves\/admin" ] },
+          { "label": "Feriados", "url": [ "base\/basetabferiados\/admin" ] },
+          { "label": "C\u00f4modos", "url": [ "cdadm\/tabela\/tabcomodo\/admin" ] },
+          { "label": "Benfeitorias", "url": [ "cdadm\/tabela\/tabbenfeitoria\/admin" ] },
+          { "label": "Proximidades", "url": [ "cdadm\/tabela\/tabproximidade\/admin" ] },
+          { "label": "Regiao", "url": [ "cdadm\/tabela\/tabregiao\/admin" ] },
+          { "label": "Atividades de Contato", "url": [ "cdadm\/tabela\/tabatividadecontato\/admin" ] },
+          { "label": "Interesse do Pretendente", "url": [ "cdadm\/tabela\/tabinteressepretendente\/admin" ] },
+          { "label": "Tipo de Pretendente (Funil)", "url": [ "cdadm\/tabela\/tabtipopretendente\/admin" ] }
+        ]
+      },
+      { "label": "Conv\u00eanios", "url": [ "cdadm\/tabela\/tabconvenio\/admin" ] },
+      { "label": "Cidades", "url": [ "base\/basetabcidade\/admin" ] },
+      {
+        "label": "Financeiro",
+        "url": [ "#" ],
+        "active": false,
+        "itemsOptions": { "class": "dropdown-submenu" },
+        "submenuOptions": { "class": "dropdown-menu" },
+        "items": [
+          { "label": "Centro de Custo", "url": [ "financeiro\/tabela\/fincentrocusto\/admin" ] },
+          { "label": "Documentos \/ Contas", "url": [ "financeiro\/tabela\/findocfinanceiro\/admin" ] }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Configura\u00e7\u00e3o",
+    "url": [ "#" ],
+    "active": false,
+    "itemsOptions": { "class": "dropdown-submenu" },
+    "submenuOptions": { "class": "dropdown-menu" },
+    "items": [
+      { "label": "Usu\u00e1rios", "url": [ "base\/baselogin\/admin" ] },
+      { "label": "Alterar Senha", "url": [ "base\/baselogin\/alterarsenha" ] },
+      { "label": "Altera Data Base", "url": [ "base\/baseempresa\/alteradatabase" ] }
+    ]
+  }
+]

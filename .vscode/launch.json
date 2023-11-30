@@ -1,0 +1,120 @@
+// {
+//     "configurations": [
+//         {
+//             "name": "Listen for Xdebug",
+//             "detail": "Waits for requests to debug.",
+//             "type": "php",
+//             "request": "launch"
+//         }
+//     ]
+// }
+
+
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Dev - Xdebug for Port 6600/Dev",
+            "type": "php",
+            "request": "launch",
+            "port": 6600,
+
+            "xdebugSettings": {
+                "max_children": 999,
+                //"max_children": 100,
+                "max_data": 65535,
+                "show_hidden": 1,
+                "max_depth": 5
+            },
+
+            "pathMappings": {
+                //"/opt/htdocs_geral/": "${workspaceFolder}"
+                "/var/www/html": "/opt/htdocs_geral"
+            },
+            "ignore": ["**/vendor/**/*.php"]
+        },
+        {
+            "name": "133 - Xdebug for Port 9900",
+            "type": "php",
+            "request": "launch",
+            "port": 9900,
+
+            "xdebugSettings": {
+                "max_children": 999,
+                //"max_children": 100,
+                "max_data": 65535,
+                "show_hidden": 1,
+                "max_depth": 5
+            },
+
+            "pathMappings": {
+                //"/opt/htdocs_geral/": "${workspaceFolder}"
+                "/var/www/html": "/opt/htdocs_geral"
+            },
+            "ignore": ["**/vendor/**/*.php"]
+        },
+        {
+            "name": "Xdebug for Port 9910/Ceasa",
+            "type": "php",
+            "request": "launch",
+            "port": 9910,
+
+            "xdebugSettings": {
+                "max_children": 999,
+                //"max_children": 100,
+                "max_data": 65535,
+                "show_hidden": 1,
+                "max_depth": 5
+            },
+
+            "pathMappings": {
+                //"/opt/htdocs_geral/": "${workspaceFolder}"
+                "/var/www/html": "/opt/htdocs_geral"
+            },
+            "ignore": ["**/vendor/**/*.php"]
+        },
+        {
+            "name": "Listen for Xdebug",
+            "type": "php",
+            "request": "launch",
+            "port": 9003
+        },
+        {
+            "name": "Launch currently open script",
+            "type": "php",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+            "port": 0,
+            "runtimeArgs": [
+                "-dxdebug.start_with_request=yes"
+            ],
+            "env": {
+                "XDEBUG_MODE": "debug,develop",
+                "XDEBUG_CONFIG": "client_port=${port}"
+            }
+        },
+        {
+            "name": "Launch Built-in web server",
+            "type": "php",
+            "request": "launch",
+            "runtimeArgs": [
+                "-dxdebug.mode=debug",
+                "-dxdebug.start_with_request=yes",
+                "-S",
+                "localhost:0"
+            ],
+            "program": "",
+            "cwd": "${workspaceRoot}",
+            "port": 9003,
+            "serverReadyAction": {
+                "pattern": "Development Server \\(http://localhost:([0-9]+)\\) started",
+                "uriFormat": "http://localhost:%s",
+                "action": "openExternally"
+            }
+        }
+    ]
+}
