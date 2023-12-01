@@ -2,15 +2,12 @@
 
 namespace Components\src\components;
 
-class Myclass
-{
-    public static function render()
-    {
-        return "<span></span>";
-    }
+use yii\base\Widget;
 
-    public function widget()
+class Myclass extends Widget
+{
+    public function renderView(string $view, array $params)
     {
-        return;
+        return $this->render($view, $params);
     }
 }
