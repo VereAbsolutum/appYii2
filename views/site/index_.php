@@ -61,6 +61,7 @@ use yii\bootstrap4\Html;
     <div class="site-index">
 
 
+
         <!-- Modal -->
         <div class="modal fade show" id="vipAccessModal" tabindex="-1" role="dialog" aria-labelledby="vipAccessModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
